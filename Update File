@@ -1,0 +1,22 @@
+Krisis=0.5
+
+def Global() :
+    print("Krisis Global :",Krisis)
+
+def Lokal() :
+    Krisis=10
+    print("Krisis Lokal :",Krisis)
+
+def Update(n) :
+    Global Krisis
+    Krisis+=n
+    print("Pembaruan Krisis Global :",Krisis)
+
+def Utama() :
+    Global()
+    Lokal()
+    Update(0.3)
+    Global()
+    Lokal()
+
+Utama()
